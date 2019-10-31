@@ -1161,7 +1161,7 @@ class Bot(_BotBase):
                     traceback.print_exc()
 
         def relay_to_collector(update):
-            key = _find_first_key(update, ['message',
+            key = _find_first_key(update, ['message','poll',
                                            'edited_message',
                                            'channel_post',
                                            'edited_channel_post',
