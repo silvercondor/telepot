@@ -75,6 +75,8 @@ class GetUpdatesLoop(RunForeverAsThread):
                     time.sleep(30)
             except:
                 traceback.print_exc()
+                offset = update['update_id'] + 1
+                pass
             finally:
                 time.sleep(relax)
 
